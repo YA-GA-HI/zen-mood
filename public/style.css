@@ -1,0 +1,67 @@
+:root{
+    --primary: #2563EB;
+    --secondary: #14B8A6;
+    --info: #E2E8F0 ;
+    --font-color: #2c3e50;
+    --success: #10B981 ;
+    --dark-primary: ;
+    --hover-song: #E2E8F0;
+    --dark-secondary: ;
+    --dark-info: ;
+    --bg:  white;
+    --icon: #2c3e50;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Rubik", Avenir, Helvetica, Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0px;
+    
+}
+
+button{
+    border:0px solid transparent;
+    cursor: pointer;
+}
+
+.nav-elements{
+    display:flex;
+}
+
+.nav-element{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background: var(--primary);
+    cursor: pointer;
+    transition: .3s ease;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0px 10px;
+}
+
+.nav-element:focus{
+    transform: scale(1.1);
+}
+
+.element-secondary{
+    background: var(--secondary);
+}
+
+
+@media (max-width: 400px)
+{
+    .nav-element{
+        width:25px;
+        height:25px;
+        margin: 0px 4px;
+    }
+}
